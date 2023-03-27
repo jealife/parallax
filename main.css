@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .container .left {
-    width: 50vw;
+    width: 55vw;
     top: 70%;
     left: 50%;
     position: absolute;
@@ -155,7 +155,7 @@ nav a:hover {
     
     }
     .container .left {
-        width: 90vw;
+        width: 100vw;
         top: 60%;
         left: 50%;
         position: absolute;
