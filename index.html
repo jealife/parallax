@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -22,19 +25,19 @@
             <h2 class="main-tilte">
                 Parallax.
             </h2>
-            <video class="video" autoplay loop>
-                <source src="AdobeStock_483576496_AdobeExpress_AdobeExpress.mp4">
-            </video>
+            <!-- <img class="bg" src="bg.jpeg" alt=""> -->
+            <!-- <video class="video" autoplay loop >
+                <source src="AdobeStock_483576496_AdobeExpress_AdobeExpress.mp4" >
+            </video> -->
             <img src="wave-sphere.png" class="left" alt="">
-            <img src="playing-hand.png" class="right" alt="">
 
         </div>
         <div class="content">
             <div class="content-images">
                 <div>
                     <img src="22645830_CharacterBacktoschool_9_.jpg" alt="">
-                    <h4>Character Back to school</h4>
-                    <h3>Character Back to school</h3>
+                    <h4>CharacterBacktoschool</h4>
+                    <h3>CharacterBacktoschool</h3>
                 </div>
                 <div>
                     <img src="22645830_CharacterBacktoschool_9_.jpg" alt="">
@@ -52,15 +55,101 @@
 
         </div>
     </section>
+    <section class="gal">
+        <div class="galery">
+            <div class="title">
+                <h1>
+                    JEaLiFe Pictures
+                </h1>
+
+            </div>
+
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <ul class="galery">
+                            <li><img src="https://unsplash.it/2100" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1923" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1924" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1900/1600" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1600" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/2600" w-100 alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="galery">
+                        <li><img src="https://unsplash.it/1670" w-100 alt=""></li>
+                        <li><img src="https://unsplash.it/1913" w-100 alt=""></li>
+                        <li><img src="https://unsplash.it/1914" w-100 alt=""></li>
+                        <li><img src="https://unsplash.it/1980" w-100 alt=""></li>
+                        <li><img src="https://unsplash.it/1600" w-100 alt=""></li>
+                        <li><img src="https://unsplash.it/2000" w-100 alt=""></li>
+                    </ul></div>
+                    <div class="swiper-slide">
+                        <ul class="galery">
+                            <li><img src="https://unsplash.it/1800" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1823" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1824" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1820" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1830" w-100 alt=""></li>
+                            <li><img src="https://unsplash.it/1833" w-100 alt=""></li>
+                        </ul>
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
 
 
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
     <script src="./scrolleffect.js"></script>
+
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
 </body>
 
 </html>
