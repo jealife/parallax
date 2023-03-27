@@ -4,7 +4,7 @@ let timeline=new TimelineMax();
 
 timeline
 .to('nav',1, {padding: "1rem 3rem",position:"fixed",backgroundColor:"#0122c822",backdropFilter: "blur(50px)"})
-.to('.left',3 , {y:"-200"})
+.to('.left',3 , {y:"600"})
 .to('.main-tilte',3, {y:-400},"-=3")
 .to('.bg',3, {y:50,width:"++"},"-=3")
 .to('.content',3.5, {backgroundColor:"#7501c8"})
