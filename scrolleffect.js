@@ -4,6 +4,7 @@ let timeline=new TimelineMax();
 
 timeline
 .to('.left',3 , {y:"20%"})
+.t0("nav",3 {position:"fixed"})
 .to('.main-tilte',3, {y:-400},"-=3")
 .to('.content',3.5, {backgroundColor:"#7501c8"})
 .fromTo('.content-images',{opacity:0}, {opacity:1, duration:5})
