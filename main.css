@@ -34,7 +34,7 @@ nav {
 }
 
 nav h2 {
-    color: #aea6a6;
+    color: #ffffff;
 }
 
 nav a {
@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .container .left {
-    width: 55vw;
+    width: 50vw;
     top: 70%;
     left: 50%;
     position: absolute;
@@ -97,6 +97,7 @@ nav a:hover {
 
 .content {
     color: #fff;
+    background: #0122c822;
     width: 100%;
     background: conic-gradient(from 0deg at 50% 50%, rgb(0, 171, 255), rgb(80, 12, 179));
     min-height: 100vh;
@@ -126,7 +127,7 @@ nav a:hover {
 }
 @media (max-width: 768px){
     nav {
-        position: fixed;
+        position: sticky;
         top: 0;
         width: 100%;
         position: absolute;
