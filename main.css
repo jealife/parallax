@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 0.5s;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+    background-color: #021f68;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #6000ce;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 3rem 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #aea6a6;
+}
+
+nav a {
+    padding: 0.8rem;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #494545;
+    transition: 0.6s;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-radius: 50px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: #ffffff 0px 7px 29px 0px;
+}
+
+.container {
+    color: #fff;
+    height: 100vh;
+}
+
+.container video {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container img {
+    position: absolute;
+}
+
+.container .left {
+    width: 50vw;
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(1rem 2rem 4.5rem #d7e8b7e9);
+}
+
+.container .right {
+    display: none;
+
+}
+
+.main-tilte {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 6.5rem;
+    transform: translate(-50%, -30%);
+
+}
+
+.content {
+    color: #fff;
+    width: 100%;
+    background: conic-gradient(from 0deg at 50% 50%, rgb(0, 171, 255), rgb(80, 12, 179));
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.content-images img {
+    width: 25vw;
+    border-radius: 20px;
+    /* margin: 5rem auto 0 auto; */
+}
+.content-images img:hover{
+    
+    box-shadow: #ffffff8a 0px 1px 45px 0px;
+}
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.text {
+    padding: 2rem 10rem;
+    font-size: 1.1rem;
+}
+@media (max-width: 768px){
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        padding: 3rem 3rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content-images {
+        flex-direction: column;
+    }
+    .content-images img {
+        width: 85vw;
+        border-radius: 20px;
+        margin: 2rem auto;
+    }
+    .text {
+        padding: 2rem 3rem;
+    }
+    .main-tilte {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        font-size: 5rem;
+        transform: translate(-50%, -30%);
+    
+    }
+    .container .left {
+        width: 90vw;
+        top: 60%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(1rem 2rem 4.5rem #d7e8b7e9);
+    }
+}
